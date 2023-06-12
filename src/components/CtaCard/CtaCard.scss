@@ -242,10 +242,8 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
       backdrop-filter: blur(10px);
       /* Note: backdrop-filter has minimal browser support */
 
-      border-radius: 20px;
+      border-radius: 30px;
       /* Note: backdrop-filter has minimal browser support */
-
-      border-radius: 20px;
 
       .ctaCardContentConDark {
         width: 80%;
@@ -312,7 +310,6 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
             color: white;
             opacity: 0.6;
 
-
             /* Inside auto layout */
 
             flex: none;
@@ -331,20 +328,21 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
           //   height: 100%;
           padding: 10px 40px;
           gap: 20px;
-
           background: linear-gradient(
               180deg,
-              rgba(255, 255, 255, 0) 48.05%,
-              rgba(255, 255, 255, 0.2) 48.9%
+              rgba(0, 0, 0, 0) 48.05%,
+              rgba(0, 0, 0, 0.2) 48.9%
             ),
             linear-gradient(
               180deg,
-              rgba(255, 255, 255, 0) -19.57%,
-              #ffffff 98.8%,
-              rgba(255, 255, 255, 0.222222) 130.43%
+              rgba(49, 58, 91, 0) -19.57%,
+              #313a5b 98.8%,
+              rgba(49, 58, 91, 0.222222) 130.43%
             );
-          filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 14px 20px rgba(42, 51, 83, 0.8));
           border-radius: 10px;
+
+          color: white;
 
           /* Inside auto layout */
 
@@ -356,7 +354,7 @@ Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
       .ctaCardIconDark {
         position: absolute;
         right: 0;
-        top: -40px;
+        top: -60px;
       }
     }
   }
