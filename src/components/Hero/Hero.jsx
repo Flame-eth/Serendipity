@@ -1,8 +1,8 @@
 import React from "react";
-import { generateIcon, heroLight, union } from "../../assets";
+import { arrow, generateIcon, heroLight, union } from "../../assets";
 import Navbar from "../Navbar/Navbar";
 import "./Hero.scss";
-import { navLinks } from "../../constants";
+import { navLinks, updatesListLight } from "../../constants";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -41,10 +41,24 @@ const Hero = () => {
               </div>
             </div>
             <div className="updates">
-              <div className="title">Updates</div>
-              <div className="boxes"></div>
+              <div className="updateTitle">Updates</div>
+              <div className="boxes">
+                {updatesListLight.map((item, index) => (
+                  <div className="box" key={index}>
+                    <div className="boxContainer">
+                      <div className="boxImage">
+                        <img src={item.image} alt="" />
+                      </div>
+                      <div className="boxText">
+                        <h1>{item.title}</h1>
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
               <div className="button">
-                <img src="" alt="" />
+                <img src={arrow} alt="" />
                 View more
               </div>
             </div>
