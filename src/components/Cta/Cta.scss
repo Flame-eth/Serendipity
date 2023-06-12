@@ -3,20 +3,34 @@
 
   box-sizing: border-box;
 
-  position: absolute;
-  height: 680px;
-  left: 0px;
-  right: 0px;
-  top: -9px;
+  //   height: 680px;
 
   background: linear-gradient(
     178.04deg,
     rgba(225, 229, 239, 0) -13.28%,
-    #e1e5ef 30.09%,
+    #e1e5ef 60.09%,
     #96a0bf 98.35%
   );
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(800px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 30px;
+  // border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  position: absolute;
+  height: 671px;
+  left: 0px;
+  right: 0px;
+  bottom: -640px;
+
+
+  .ctaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+  }
 }

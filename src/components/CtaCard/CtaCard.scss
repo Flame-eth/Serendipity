@@ -1,0 +1,182 @@
+.ctaCard {
+  display: flex;
+
+  width: 440px;
+  height: 503px;
+
+  filter: drop-shadow(0px 14px 44px rgba(50, 83, 140, 0.3));
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: solid 1px #e1e5ef;
+  border-radius: 30px;
+
+  .ctaCardContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    .ctaCardImage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 60%;
+
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+    }
+
+    .ctaCardContent {
+      display: flex;
+      flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
+
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 100%;
+      //   height: -303.45px;
+      height: 55%;
+      left: 0px;
+      //   top: 0px;
+      bottom: 0px;
+
+      background: linear-gradient(
+        180deg,
+        rgba(209, 219, 230, 0) -14.49%,
+        #c5ccde 100%
+      );
+      backdrop-filter: blur(10px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 20px;
+
+      .ctaCardContentCon {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        .ctaCardTitle {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          margin: 0;
+          padding: 0;
+
+          /* identical to box height, or 150% */
+
+          color: #000000;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+
+        .ctaCardDescription {
+          p {
+            /* Subtitle/Subtitle 1 */
+
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+
+            /* identical to box height, or 153% */
+
+            color: rgba(0, 0, 0, 0.8);
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+          }
+
+          span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+
+            /* or 153% */
+
+            /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+
+            color: rgba(0, 0, 0, 0.6);
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          }
+        }
+
+        .ctaCardButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          //   width: 100%;
+          //   height: 100%;
+          padding: 10px 40px;
+          gap: 20px;
+
+          background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 48.05%,
+              rgba(255, 255, 255, 0.2) 48.9%
+            ),
+            linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) -19.57%,
+              #ffffff 98.8%,
+              rgba(255, 255, 255, 0.222222) 130.43%
+            );
+          filter: drop-shadow(0px 14px 20px rgba(0, 0, 0, 0.5));
+          border-radius: 10px;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+      }
+      .ctaCardIcon {
+        position: absolute;
+        right: 0;
+        top: -40px;
+      }
+    }
+  }
+}
