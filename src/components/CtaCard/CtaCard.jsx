@@ -15,10 +15,10 @@ const CtaCard = (card) => {
         <div className="ctaCardContent">
           <div className="ctaCardContentCon">
             <h2 className="ctaCardTitle">{cardItem.title}</h2>
-            <p className="ctaCardDescription">
+            <span className="ctaCardDescription">
               <p>{cardItem.subtitle} </p>
               <span>{cardItem.description}</span>
-            </p>
+            </span>
             <div className="ctaCardButton">
               <img src={cardItem.buttonIcon} alt="" />
               <span>{cardItem.buttonText} </span>

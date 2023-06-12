@@ -18,6 +18,13 @@ import buttonL3 from "./buttonL3.svg";
 import polygonL1 from "./polygonL1.svg";
 import polygonL2 from "./polygonL2.svg";
 import polygonL3 from "./polygonL3.svg";
+import heroDark from "./hero-dark.svg";
+import linkedDark from "./linkedDark.svg";
+import permutationDark from "./permutationDark.svg";
+import releaseDark from "./releaseDark.svg";
+import statusDark from "./statusDark.svg";
+import uploadDark from "./uploadDark.svg";
+import arrowDark from "./arrowDark.svg";
 
 export {
   Logo,
@@ -40,4 +47,11 @@ export {
   polygonL1,
   polygonL2,
   polygonL3,
+  heroDark,
+  linkedDark,
+  permutationDark,
+  releaseDark,
+  statusDark,
+  uploadDark,
+  arrowDark,
 };

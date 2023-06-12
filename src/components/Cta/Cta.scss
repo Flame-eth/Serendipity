@@ -1,9 +1,6 @@
 .cta {
-  /* Rectangle 73 */
-
+  
   box-sizing: border-box;
-
-  //   height: 680px;
 
   background: linear-gradient(
     178.04deg,
@@ -24,8 +21,36 @@
   right: 0px;
   bottom: -640px;
 
-
   .ctaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+  }
+}
+
+.ctaDark {
+  /* Rectangle 73 */
+
+  box-sizing: border-box;
+
+  background: linear-gradient(90deg, #602ea663 28.32%, #c977d692 95.98%);
+  // filter: blur(150px);
+  backdrop-filter: blur(800px);
+
+  // border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  position: absolute;
+  height: 671px;
+  left: 0px;
+  right: 0px;
+  bottom: -640px;
+
+  .ctaContainerDark {
     display: flex;
     flex-direction: row;
     justify-content: center;

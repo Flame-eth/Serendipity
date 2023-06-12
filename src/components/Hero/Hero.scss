@@ -7,11 +7,19 @@
     justify-content: space-between;
     width: 100%;
 
+    .image-lightBg {
+      background-image: url(../../assets/hero-light.svg);
+    }
+
+    .image-darkBg {
+      background-image: url(../../assets/hero-dark.svg);
+    }
+
     .image {
       overflow: hidden;
       width: 100%;
       height: 890px;
-      background-image: url(../../assets/hero-light.svg);
+
       background-position: right;
       //   background-repeat: no-repeat;X
       background-size: cover;
@@ -23,7 +31,8 @@
         align-items: center;
         width: 100%;
         padding-top: 50px;
-        // height: 95%; 
+        justify-content: space-between;
+        // height: 95%;
         // padding-bottom: 200px;
 
         .contentBg {
@@ -182,16 +191,188 @@
           }
         }
 
-        .updates {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 20%;
-          height: 75%;
+        .contentBgDark {
+          height: 100%;
+          width: 60%;
+          // background: radial-gradient(
+          //   ellipse at left,
+          //   rgba(255, 255, 255, 1) 0%,
+          //   rgba(255, 255, 255, 0) 70%
+          // );
 
-          box-sizing: border-box;
+          .contentDark {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            justify-content: center;
 
+            height: 100%;
+            margin-left: 137px;
+            gap: 20px;
+
+            .imageFeatureDark {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              padding: 15px 8px;
+              gap: 4px;
+              color: white;
+
+              // width: 198.94px;
+              // height: 25.34px;
+
+              width: 40%;
+
+              background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.1) 0%,
+                rgba(255, 255, 255, 0.05) 100%
+              );
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+                0px 30px 60px rgba(0, 0, 0, 0.5);
+              border-radius: 8px;
+            }
+
+            .titleDark {
+              h1 {
+                margin: 0;
+                padding: 0;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 80px;
+                // line-height: 90px;
+                /* or 112% */
+
+                background: linear-gradient(
+                    76.27deg,
+                    #cc51d6 -2.26%,
+                    rgba(90, 104, 232, 0.6) 28.13%,
+                    #e1b1ff 53.17%
+                  ),
+                  linear-gradient(
+                    114.08deg,
+                    #ffffff 4%,
+                    rgba(255, 255, 255, 0.5) 75.12%
+                  ),
+                  linear-gradient(
+                    114.08deg,
+                    #ffffff 4%,
+                    rgba(255, 255, 255, 0.5) 75.12%
+                  );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                background-blend-mode: normal, overlay, overlay;
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+              }
+            }
+
+            .descriptionDark {
+              p {
+                // width: 565px;
+                // height: 126px;
+
+                width: 80%;
+
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 23px;
+                margin: 0;
+
+                color: rgba(255, 255, 255, 0.6);
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+              }
+            }
+
+            .buttonDark {
+              box-sizing: border-box;
+
+              /* Auto layout */
+
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 14px 6px;
+              gap: 10px;
+
+              // width: 201px;
+              // height: 46px;
+
+              width: 50%;
+
+              background: linear-gradient(
+                  180deg,
+                  rgba(254, 200, 241, 0.9) -22.92%,
+                  rgba(237, 146, 215, 0) 26.73%
+                ),
+                radial-gradient(
+                    82.83% 280.98% at 96.89% 70.83%,
+                    #f69ea3 0%,
+                    #e970c4 100%
+                  )
+                  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+              background-blend-mode: overlay, normal;
+              /* Mainbutton/Light */
+
+              box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.5),
+                inset 0px -1px 8px #9375b6, inset 0px 0px 5px #fface4;
+              border-radius: 10px;
+
+              /* Inside auto layout */
+
+              flex: none;
+              order: 3;
+              flex-grow: 0;
+
+              img {
+                // padding-right: 10px;
+              }
+
+              .navLinkDark {
+                color: #fff;
+                text-decoration: none;
+                // height: 100%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                gap: 10px;
+
+                &:hover {
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+          }
+        }
+
+        .update-darkBg {
+          background: linear-gradient(
+            142.21deg,
+            rgba(27, 51, 81, 0.3) 19.63%,
+            rgba(155, 97, 149, 0.3) 83.01%
+          );
+          box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.25);
+          backdrop-filter: blur(30px);
+        }
+
+        .update-lightBg {
           background: linear-gradient(
             91.24deg,
             rgba(255, 255, 255, 0.3) 1.74%,
@@ -199,7 +380,17 @@
           );
           box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.25);
           backdrop-filter: blur(30px);
-          /* Note: backdrop-filter has minimal browser support */
+        }
+        .updates {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          height: 75%;
+          margin-right: 137px;
+
+          box-sizing: border-box;
 
           border-radius: 30px;
           gap: 25px;
@@ -215,6 +406,25 @@
             padding-top: 20px;
 
             color: #0e0644;
+
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: flex-start;
+            // width: 100%;
+            // left: 16px;
+          }
+          .updateTitleDark {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            // line-height: 36px;
+            /* identical to box height, or 150% */
+
+            padding-top: 20px;
+
+            color: white;
 
             display: flex;
             position: relative;
@@ -308,6 +518,85 @@
                 }
               }
             }
+
+            .boxDark {
+              width: 92%;
+              height: 84px;
+              background: linear-gradient(
+                270deg,
+                rgba(255, 255, 255, 0.1) 57.6%,
+                rgba(255, 255, 255, 0) 91.06%
+              );
+              border-radius: 0px 20px 20px 0px;
+
+              /* Inside auto layout */
+
+              flex: none;
+              order: 1;
+              flex-grow: 0;
+
+              .boxContainerDark {
+                display: flex;
+                flex-direction: row;
+                padding: 20px 16px;
+                // justify-content: center;
+                align-items: center;
+                gap: 24px;
+              }
+
+              .boxImageDark {
+                object-fit: contain;
+                height: 50px;
+              }
+
+              .boxTextDark {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                h1 {
+                  /* Subtitle/Subtitle 1 */
+
+                  font-family: "Inter";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 17px;
+                  // line-height: 26px;
+                  /* identical to box height, or 153% */
+
+                  /* Label/Dark and Light/Accent */
+
+                  color: #a17ccc;
+
+                  // mix-blend-mode: overlay;
+
+                  /* Inside auto layout */
+
+                  flex: none;
+                  order: 0;
+                  flex-grow: 0;
+
+                  margin: 0;
+                }
+                p {
+                  font-family: "Inter";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 13px;
+                  // line-height: 20px;
+                  /* identical to box height, or 154% */
+
+                  color: gainsboro;
+
+                  /* Inside auto layout */
+
+                  flex: none;
+                  order: 1;
+                  flex-grow: 0;
+
+                  margin: 0;
+                }
+              }
+            }
           }
 
           .updateButton {
@@ -345,6 +634,26 @@
             flex-grow: 0;
 
             margin-bottom: 30px;
+          }
+
+          .updateButtonDark {
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 48.05%,
+                rgba(0, 0, 0, 0.2) 48.9%
+              ),
+              linear-gradient(
+                180deg,
+                rgba(49, 58, 91, 0) -19.57%,
+                #313a5b 98.8%,
+                rgba(49, 58, 91, 0.222222) 130.43%
+              );
+            filter: drop-shadow(0px 14px 20px rgba(42, 51, 83, 0.8));
+            border-radius: 10px;
+            img {
+              color: #fff;
+            }
+            color: white;
           }
         }
       }

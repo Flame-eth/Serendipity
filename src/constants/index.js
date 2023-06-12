@@ -5,14 +5,19 @@ import {
   cardL1,
   cardL2,
   cardL3,
+  linkedDark,
   linkedLight,
   permutationLight,
   polygonL1,
   polygonL2,
   polygonL3,
+  releaseDark,
   releaseLight,
+  statusDark,
   statusLight,
+  uploadDark,
   uploadLight,
+  permutationDark,
 } from "../assets";
 
 export const navLinks = [
@@ -62,6 +67,33 @@ export const updatesListLight = [
   },
 ];
 
+export const updatesListDark = [
+  {
+    title: "Upload Image",
+    description: "New Feature: April 21, 2023",
+    image: uploadDark,
+  },
+  {
+    title: "Permutation",
+    description: "New Feature: April 19, 2023",
+    image: permutationDark,
+  },
+  {
+    title: "Status Page",
+    description: "New Feature: April 16, 2023",
+    image: statusDark,
+  },
+  {
+    title: "V2.1 Release",
+    description: "New Feature: April 14, 2023",
+    image: releaseDark,
+  },
+  {
+    title: "Linked Roles",
+    description: "New Feature: April 11, 2023",
+    image: linkedDark,
+  },
+];
 export const cardLight = [
   {
     title: "Using Discord",
