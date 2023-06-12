@@ -8,6 +8,7 @@ import releaseLight from "./release-light.svg";
 import statusLight from "./status-light.svg";
 import uploadLight from "./upload-light.svg";
 import arrow from "./arrow.svg";
+import uploadIcon from "./waveform.svg";
 
 export {
   Logo,
@@ -20,4 +21,5 @@ export {
   statusLight,
   uploadLight,
   arrow,
+  uploadIcon,
 };

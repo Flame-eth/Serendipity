@@ -1,5 +1,11 @@
 import React from "react";
-import { arrow, generateIcon, heroLight, union } from "../../assets";
+import {
+  arrow,
+  generateIcon,
+  heroLight,
+  union,
+  uploadIcon,
+} from "../../assets";
 import Navbar from "../Navbar/Navbar";
 import "./Hero.scss";
 import { navLinks, updatesListLight } from "../../constants";
@@ -57,7 +63,7 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
-              <div className="button">
+              <div className="updateButton">
                 <img src={arrow} alt="" />
                 View more
               </div>

@@ -9,8 +9,8 @@
 
     .image {
       overflow: hidden;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 890px;
       background-image: url(../../assets/hero-light.svg);
       background-position: right;
       //   background-repeat: no-repeat;X
@@ -200,28 +200,47 @@
           /* Note: backdrop-filter has minimal browser support */
 
           border-radius: 30px;
+          gap: 25px;
 
           .updateTitle {
             font-family: "Inter";
             font-style: normal;
             font-weight: 600;
             font-size: 24px;
-            line-height: 36px;
+            // line-height: 36px;
             /* identical to box height, or 150% */
 
-            color: #000000;
+            color: #0e0644;
 
-            mix-blend-mode: overlay;
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: flex-start;
+            // width: 100%;
+            // left: 16px;
           }
 
           .boxes {
             width: 100%;
             display: flex;
             flex-direction: column;
+            gap: 10px;
 
             .box {
-              width: 100%;
-              height: 94px;
+              width: 92%;
+              height: 84px;
+              background: linear-gradient(
+                270deg,
+                rgba(255, 255, 255, 0.1) 57.6%,
+                rgba(255, 255, 255, 0) 91.06%
+              );
+              border-radius: 0px 20px 20px 0px;
+
+              /* Inside auto layout */
+
+              flex: none;
+              order: 1;
+              flex-grow: 0;
 
               .boxContainer {
                 display: flex;
@@ -229,6 +248,7 @@
                 padding: 20px 16px;
                 // justify-content: center;
                 align-items: center;
+                gap: 24px;
               }
 
               .boxImage {
@@ -237,6 +257,9 @@
               }
 
               .boxText {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
                 h1 {
                   /* Subtitle/Subtitle 1 */
 
@@ -244,27 +267,29 @@
                   font-style: normal;
                   font-weight: 600;
                   font-size: 17px;
-                  line-height: 26px;
+                  // line-height: 26px;
                   /* identical to box height, or 153% */
 
                   /* Label/Dark and Light/Accent */
 
-                  color: #000000;
+                  color: #0e0644;
 
-                  mix-blend-mode: overlay;
+                  // mix-blend-mode: overlay;
 
                   /* Inside auto layout */
 
                   flex: none;
                   order: 0;
                   flex-grow: 0;
+
+                  margin: 0;
                 }
                 p {
                   font-family: "Inter";
                   font-style: normal;
                   font-weight: 400;
                   font-size: 13px;
-                  line-height: 20px;
+                  // line-height: 20px;
                   /* identical to box height, or 154% */
 
                   color: rgba(0, 0, 0, 0.6);
@@ -274,9 +299,44 @@
                   flex: none;
                   order: 1;
                   flex-grow: 0;
+
+                  margin: 0;
                 }
               }
             }
+          }
+
+          .updateButton {
+            box-sizing: border-box;
+
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 13px 60px;
+            gap: 10px;
+
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 48.05%,
+                rgba(255, 255, 255, 0.1) 48.9%
+              ),
+              linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) -19.57%,
+                rgba(255, 255, 255, 0.6) 98.8%,
+                rgba(255, 255, 255, 0.222222) 130.43%
+              );
+            filter: drop-shadow(0px 14px 20px rgba(42, 51, 83, 0.3));
+            border-radius: 10px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
           }
         }
       }
