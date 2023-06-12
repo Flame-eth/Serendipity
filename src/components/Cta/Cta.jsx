@@ -1,17 +1,17 @@
 import React from "react";
 import "./Cta.scss";
 import CtaCard from "../CtaCard/CtaCard";
-import { cardLight } from "../../constants";
+import { cardDark, cardLight } from "../../constants";
 import { connect } from "react-redux";
 
 const Cta = ({ darkMode }) => {
-  console.log(darkMode);
+  // console.log(darkMode);
   return (
     <div>
       {darkMode ? (
         <div className="ctaDark">
           <div className="ctaContainerDark">
-            {cardLight.map((cardItem, index) => (
+            {cardDark.map((cardItem, index) => (
               <CtaCard key={index} cardItem={cardItem} />
             ))}
           </div>

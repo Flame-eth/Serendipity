@@ -18,6 +18,15 @@ import {
   uploadDark,
   uploadLight,
   permutationDark,
+  cardD1,
+  cardD2,
+  cardD3,
+  buttonD1,
+  buttonD2,
+  buttonD3,
+  PolygonD1,
+  PolygonD2,
+  PolygonD3,
 } from "../assets";
 
 export const navLinks = [
@@ -94,6 +103,7 @@ export const updatesListDark = [
     image: linkedDark,
   },
 ];
+
 export const cardLight = [
   {
     title: "Using Discord",
@@ -124,5 +134,38 @@ export const cardLight = [
     buttonIcon: buttonL3,
     buttonText: " View Documents",
     icon: polygonL3,
+  },
+];
+
+export const cardDark = [
+  {
+    title: "Using Discord",
+    subtitle: "Mastering the Art of Prompt Writing",
+    description:
+      "Prompt writing involves crafting clear and engaging prompts, while using images to create a visual representation of the idea or concept.",
+    bg: cardD1,
+    buttonIcon: buttonD1,
+    buttonText: "Join Discord",
+    icon: PolygonD1,
+  },
+  {
+    title: "Getting Started",
+    subtitle: "Streaming Collaborative Workflows",
+    description:
+      "Use the Midjourney Bot on Discord to effortlessly generate designs and artworks for your project. Simply enter a command and the bot will respond with a prompt or image...",
+    bg: cardD2,
+    buttonIcon: buttonD2,
+    buttonText: "Explore Now",
+    icon: PolygonD2,
+  },
+  {
+    title: "User Guide",
+    subtitle: "Using the Midjourney Bot",
+    description:
+      "Explore key concepts like versions and parameters when using Midjourney. Versions refer to different variations of a design, allowing you to experiment ...",
+    bg: cardD3,
+    buttonIcon: buttonD3,
+    buttonText: " View Documents",
+    icon: PolygonD3,
   },
 ];

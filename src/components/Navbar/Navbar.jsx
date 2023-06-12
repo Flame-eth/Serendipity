@@ -10,7 +10,7 @@ import { setMode } from "../../redux/mode/mode.actions";
 const Navbar = ({ darkMode, setMode }) => {
   // const [isDarkMode, setIsDarkMode] = useState(false);
 
-  console.log(darkMode);
+  // console.log(darkMode);
   const handleToggle = () => {
     setMode(!darkMode);
 

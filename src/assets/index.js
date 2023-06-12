@@ -25,6 +25,15 @@ import releaseDark from "./releaseDark.svg";
 import statusDark from "./statusDark.svg";
 import uploadDark from "./uploadDark.svg";
 import arrowDark from "./arrowDark.svg";
+import cardD1 from "./cardD1.svg";
+import cardD2 from "./cardD2.svg";
+import cardD3 from "./cardD3.svg";
+import PolygonD1 from "./PolygonD1.svg";
+import PolygonD2 from "./PolygonD2.svg";
+import PolygonD3 from "./PolygonD3.svg";
+import buttonD1 from "./buttonD1.svg";
+import buttonD2 from "./buttonD2.svg";
+import buttonD3 from "./buttonD3.svg";
 
 export {
   Logo,
@@ -54,4 +63,13 @@ export {
   statusDark,
   uploadDark,
   arrowDark,
+  cardD1,
+  cardD2,
+  cardD3,
+  PolygonD1,
+  PolygonD2,
+  PolygonD3,
+  buttonD1,
+  buttonD2,
+  buttonD3,
 };
