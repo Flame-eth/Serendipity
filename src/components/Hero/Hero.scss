@@ -1,0 +1,185 @@
+.Hero {
+  width: 100%;
+
+  .heroContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .image {
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../../assets/hero-light.svg);
+      background-position: right;
+      //   background-repeat: no-repeat;X
+      background-size: cover;
+      position: relative;
+
+      .heroSections {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .contentBg {
+          height: 100%;
+          width: 60%;
+          background: radial-gradient(
+            ellipse at left,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 70%
+          );
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            justify-content: center;
+
+            height: 100%;
+            margin-left: 137px;
+            gap: 20px;
+
+            .imageFeature {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              padding: 15px 8px;
+              gap: 4px;
+
+              // width: 198.94px;
+              // height: 25.34px;
+
+              width: 40%;
+
+              background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.1) 0%,
+                rgba(255, 255, 255, 0.05) 100%
+              );
+              box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+                0px 30px 60px rgba(0, 0, 0, 0.5);
+              border-radius: 8px;
+            }
+
+            .title {
+              h1 {
+                margin: 0;
+                padding: 0;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 80px;
+                // line-height: 90px;
+                /* or 112% */
+
+                background: linear-gradient(
+                    72.97deg,
+                    #d651cd -3.71%,
+                    rgba(232, 90, 118, 0.6) 24.99%,
+                    rgba(0, 0, 0, 0.3) 46.49%
+                  ),
+                  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  #000000;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+
+                background-blend-mode: normal, overlay, overlay;
+              }
+            }
+
+            .description {
+              p {
+                // width: 565px;
+                // height: 126px;
+
+                width: 80%;
+
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 23px;
+                margin: 0;
+
+                color: rgba(0, 0, 0, 0.6);
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+              }
+            }
+
+            .button {
+              box-sizing: border-box;
+
+              /* Auto layout */
+
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 14px 6px;
+              gap: 10px;
+
+              // width: 201px;
+              // height: 46px;
+
+              width: 50%;
+
+              background: linear-gradient(
+                  180deg,
+                  rgba(254, 200, 241, 0.9) -22.92%,
+                  rgba(237, 146, 215, 0) 26.73%
+                ),
+                radial-gradient(
+                    82.83% 280.98% at 96.89% 70.83%,
+                    #f69ea3 0%,
+                    #e970c4 100%
+                  )
+                  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+              background-blend-mode: overlay, normal;
+              /* Mainbutton/Light */
+
+              box-shadow: 0px 10px 30px rgba(234, 113, 197, 0.5),
+                inset 0px -1px 8px #9375b6, inset 0px 0px 5px #fface4;
+              border-radius: 10px;
+
+              /* Inside auto layout */
+
+              flex: none;
+              order: 3;
+              flex-grow: 0;
+
+              img {
+                // padding-right: 10px;
+              }
+
+              .navLink {
+                color: #fff;
+                text-decoration: none;
+                // height: 100%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                gap: 10px;
+
+                &:hover {
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
