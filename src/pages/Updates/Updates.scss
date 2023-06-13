@@ -27,7 +27,7 @@
       position: absolute;
       /* Rightmenu/Notification */
       right: 0;
-      width: 30%;
+      width: 40%;
       height: 100%;
 
       //   border-left: 2px dashed #ffffff;
@@ -138,6 +138,53 @@
 
             border-radius: 7px;
           }
+        }
+      }
+    }
+
+    .sidebar {
+      //   padding: 0 60px;
+      width: 35%;
+      margin: 0 auto;
+      margin-top: 50px;
+      right: 40px;
+      border-radius: 10px;
+      position: absolute;
+      background: linear-gradient(
+        91.24deg,
+        rgba(27, 51, 81, 0.8) 2.12%,
+        rgba(36, 6, 33, 0.8) 101.68%
+      );
+      backdrop-filter: blur(50px);
+      height: auto;
+
+      .titleSec {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        margin: 0 auto;
+
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+
+          /* identical to box height, or 150% */
+
+          color: #ffffff;
+        }
+
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+
+          /* or 160% */
+
+          color: rgba(255, 255, 255, 0.7);
         }
       }
     }
