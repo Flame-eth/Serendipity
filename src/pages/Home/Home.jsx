@@ -6,6 +6,7 @@ import Cta from "../../components/Cta/Cta";
 const Home = () => {
   return (
     <div>
+      
       <Hero />
       <Cta />
     </div>

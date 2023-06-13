@@ -23,7 +23,14 @@
       background-position: right;
       //   background-repeat: no-repeat;X
       background-size: cover;
-      position: relative;
+
+      .heroNavbar {
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
 
       .heroSections {
         display: flex;

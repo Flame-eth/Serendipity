@@ -20,7 +20,9 @@ const Hero = ({ darkMode }) => {
       <div className="heroContainer">
         <div
           className={darkMode ? "image image-darkBg" : "image image-lightBg"}>
-          <Navbar />
+            <div className="heroNavbar">
+              <Navbar />
+            </div>
           <div className="heroSections">
             {darkMode ? (
               <div className="contentBgDark">
